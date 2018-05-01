@@ -293,7 +293,7 @@ function handler() {
       html_str += '<id>' + anno.anno_id + '</id>';
       if (bounding_box){
           html_str += '<type>'
-          html_str += 'bounding_box';
+          html_str += (ellipse_box ? 'ellipse_box' : 'bounding_box');
           html_str += '</type>'
         } 
       if(anno.GetType() == 1) {
